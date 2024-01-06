@@ -1,0 +1,113 @@
+@media screen and (max-width:1400px) {
+    html {
+        font-size: 13px;
+    }
+
+    #lastes-news {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-title {
+        grid-area: 1 / span 2;
+    }
+
+}
+
+@media screen and (max-width:950px) {
+    html {
+        font-size: 10px;
+    }
+
+    .home-child {
+        grid-area: 1 / span 2;
+    }
+
+    .card-body {
+        background-color: var(--primary-color);
+        padding: 1rem;
+        min-height: 14rem;
+        color: #fff;
+    }
+
+    footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer>p {
+        grid-area: 3 / 1 / span 1 / span 2;
+    }
+
+    .news-details {
+        background-color: #fff;
+        padding: 1rem;
+        grid-area: 1 / 1 / span 3 / span 4;
+    }
+
+    .details-card {
+        grid-area: 1 / 5 / span 1 / span 2;
+    }
+
+    .categories {
+        grid-area: 2 / 5 / span 1 / span 2;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+
+    .social-links {
+        display: none;
+    }
+
+    #home {
+        height: 100vh;
+    }
+
+    #lastes-news {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-title {
+        grid-area: 1 / span 1;
+    }
+
+    .card-body {
+        min-height: 15rem;
+    }
+
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer>p {
+        grid-area: 5 / 1 / span 1 / span 1;
+        text-align: center;
+        background-color: var(--secondary-color);
+        padding: 1rem;
+        width: 80%;
+        margin: auto;
+        font-size: 1.2rem;
+    }
+
+    .news-details {
+        background-color: #fff;
+        padding: 1rem;
+        grid-area: 1 / 1 / span 3 / span 6;
+    }
+
+    .details-card {
+        grid-area: 4 / 1 / span 1 / span 3;
+        background-color: var(--primary-color);
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .categories {
+        grid-area: 4 / 4 / span 1 / span 3;
+        background-color: #fff;
+        padding: 1rem;
+    }
+}
